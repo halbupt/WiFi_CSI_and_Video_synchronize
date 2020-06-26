@@ -24,26 +24,24 @@ C.Run Demosvm for SVM classification.
 
 D.explainations
 
-a.ReadCSI.py--python function directly processing the raw CSI *.dat into the reqiured training datasets for SVM
+(1).ReadCSI.py--python function directly processing the raw CSI *.dat into the reqiured training datasets for SVM
 
   [train_data,train_label,test_data,test_label] = ReadCSI.csi4svm (month,day,scene,person,action,action_seg,split_flag)
   
-  *month day - the csi data captured
+  1）month day - the csi data captured
   
-  *scene - 1 for without occlusion， 2  for partial occlusion，3 for fullocclusion
+  2）scene - 1 for without occlusion， 2  for partial occlusion，3 for fullocclusion
   
-  *person - 1 for female， 3 for male
+  3）person - 1 for female， 3 for male
   
-  *action -[1,2,3,4,5,6,9,10,11] are "falling_down", "throwing", "pushing", "kicking", "punching","jumping", "drinking","phone_talking", "seating", here we move action 10 11     into action 7,8 in process.
+  4）action -[1,2,3,4,5,6,9,10,11] are "falling_down", "throwing", "pushing", "kicking", "punching","jumping", "drinking","phone_talking", "seating", here we move action 10 11     into action 7,8 in process.
   
-  *actionseg - second(s) for an action
+  5）actionseg - second(s) for an action
   
-  *split_flag - 1 for 'proportion'[ default as 70% for training,30% for testing]; 2 for person1 train & person3 test; 2.5 person3 train & person1 test; 3 for scene 1&2 train, scene3 test
+  6）split_flag - 1 for 'proportion'[ default as 70% for training,30% for testing]; 2 for person1 train & person3 test; 2.5 person3 train & person1 test; 3 for scene 1&2 train, scene3 test
   
 
-b.PDemo4csi--matlab function extract csi amplitudes and phase from raw csi *.dat
-
-  use：
+（2）.PDemo4csi--matlab function extract csi amplitudes and phase from raw csi *.dat
   
   import matlab.engine 
   
@@ -53,17 +51,13 @@ b.PDemo4csi--matlab function extract csi amplitudes and phase from raw csi *.dat
   
   
 
-c.Pcsi4actseg--matlab function segment csi amplitude into action by time
-
-  use：
-  
+（3）.Pcsi4actseg--matlab function segment csi amplitude into action by time
+ 
   [train, label] = eng.Pcsi4actseg(csi_amp, scene, person, action, action_seg, nargout = 2) 
   
   
 
-d.Psplit--matlab function split training data by proportion,person,scene.
+（4）.Psplit--matlab function split training data by proportion,person,scene.
 
-  use:
-  
   [train_d, train_l, test_d, test_l] = eng.Psplit(train, label, scene, person, split_flag, nargout = 4) 
 

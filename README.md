@@ -15,7 +15,7 @@ A.  Installation MATLAB Engine API for python
 
 
 
-B.  Datasets Downloads from https://drive.google.com/file/d/1F_Lu9Vg69z6jR7lpXmn90ticb04iT57w/view?usp=sharing.
+B.  Datasets Downloads from https://drive.google.com/file/d/1F_Lu9Vg69z6jR7lpXmn90ticb04iT57w/view?usp=sharing
                  
      put it into the directory as '*/WiFi_CSI_and_Video_synchronize/examples/*'
         

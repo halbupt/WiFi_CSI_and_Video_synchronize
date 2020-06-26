@@ -3,21 +3,21 @@ Combined wireless signals and video for intelligent sensing
 
 A. Installation MATLAB Engine API for python
 
-----Windows
-cd "matlabroot\extern\engines\python"
-python setup.py install
+    ----Windows
+     cd "matlabroot\extern\engines\python"
+     python setup.py install
 
-----Mac or Linux
-cd "matlabroot/extern/engines/python"
-python setup.py install
+    ----Mac or Linux
+     cd "matlabroot/extern/engines/python"
+     python setup.py install
 
-* 如果创建python有venv目录（自己建的虚拟环境，一般Anaconda 的envs中），此目录下包含着该项目的依赖文件。需要将build目录（matlabroot\extern\engines\python
-）下的matlab文件夹复制到venv\Lib目录下。
+    * 如果创建python有venv目录（自己建的虚拟环境，一般Anaconda 的envs中），此目录下包含着该项目的依赖文件。需要将build目录matlabroot\extern\engines\python\matlab 复制到venv\Lib目录下。
 
 
 
 B.Datasets Downloads from https://drive.google.com/drive/folders/184qnT8qCyuw-lQy3cl0CQ_18dtfmK0_A?usp=sharing.
-  put it into the directory as '*/WiFi_CSI_and_Video_synchronize/examples/*'
+                 
+     put it into the directory as '*/WiFi_CSI_and_Video_synchronize/examples/*'
 
 
 C.Run Demosvm for SVM classification.

@@ -1,7 +1,7 @@
 # Yanling
 Combined wireless signals and video for intelligent sensing
 
-A. Installation MATLAB Engine API for python
+A.  Installation MATLAB Engine API for python
 
     ----Windows
      cd "matlabroot\extern\engines\python"
@@ -15,14 +15,14 @@ A. Installation MATLAB Engine API for python
 
 
 
-B.Datasets Downloads from https://drive.google.com/drive/folders/184qnT8qCyuw-lQy3cl0CQ_18dtfmK0_A?usp=sharing.
+B.  Datasets Downloads from https://drive.google.com/drive/folders/184qnT8qCyuw-lQy3cl0CQ_18dtfmK0_A?usp=sharing.
                  
      put it into the directory as '*/WiFi_CSI_and_Video_synchronize/examples/*'
 
 
-C.Run Demosvm for SVM classification.
+C.   Run Demosvm for SVM classification.
 
-D.explainations
+D.   explainations
 
 (1).ReadCSI.py--python function directly processing the raw CSI *.dat into the reqiured training datasets for SVM
 

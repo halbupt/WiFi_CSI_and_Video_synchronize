@@ -18,9 +18,11 @@ A.  Installation MATLAB Engine API for python
 B.  Datasets Downloads from https://drive.google.com/file/d/1F_Lu9Vg69z6jR7lpXmn90ticb04iT57w/view?usp=sharing.
                  
      put it into the directory as '*/WiFi_CSI_and_Video_synchronize/examples/*'
+        
+   
+C.   Run Demosvm for SVM classification.the datasets downloads from https://drive.google.com/file/d/1pME9TcA8YXjD5n4kgD3Ft9B069AfI6bm/view?usp=sharing
 
-
-C.   Run Demosvm for SVM classification.
+      put it into the directory as '*/WiFi_CSI_and_Video_synchronize/Result/*'
 
 D.   explainations
 
@@ -41,7 +43,7 @@ D.   explainations
           6）split_flag - 1 for 'proportion'[ default as 70% for training,30% for testing]; 2 for person1 train & person3 test; 2.5 person3 train & person1 test; 3 for scene 1&2 train, scene3 test
   
 
-（2）.PDemo4csi--matlab function extract csi amplitudes and phase from raw csi *.dat
+（2）.PDemo4csi.m--matlab function extract csi amplitudes and phase from raw csi *.dat
      use :
    
      import matlab.engine 
@@ -52,13 +54,13 @@ D.   explainations
   
   
 
-（3）.Pcsi4actseg--matlab function segment csi amplitude into action by time
+（3）.Pcsi4actseg.m--matlab function segment csi amplitude into action by time
  
      use : [train, label] = eng.Pcsi4actseg(csi_amp, scene, person, action, action_seg, nargout = 2) 
   
   
 
-（4）.Psplit--matlab function split training data by proportion,person,scene.
+（4）.Psplit.m--matlab function split training data by proportion,person,scene.
 
     use: [train_d, train_l, test_d, test_l] = eng.Psplit(train, label, scene, person, split_flag, nargout = 4) 
 

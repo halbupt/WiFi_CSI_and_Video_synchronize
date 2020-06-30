@@ -28,7 +28,7 @@ D.   explainations
 
 (1).ReadCSI.py--python function directly processing the raw CSI *.dat into the reqiured training datasets for SVM
 
-    use : [train_data,train_label,test_data,test_label] = ReadCSI.csi4svm (month,day,scene,person,action,action_seg,split_flag)
+    use : [train_data,train_label,test_data,test_label] = ReadCSI.csi4svm (month,day,scene,person,action,action_seg,split_flag, objflag)
   
           1）month day - the csi data captured
   
@@ -41,6 +41,8 @@ D.   explainations
           5）actionseg - second(s) for an action
   
           6）split_flag - 1 for 'proportion'[ default as 70% for training,30% for testing]; 2 for person1 train & person3 test; 2.5 person3 train & person1 test; 3 for scene 1&2 train, scene3 test
+          
+          7) objflag- 'SVM' 'csinet' 'LSTM'
   
 
 （2）.PDemo4csi.m--matlab function extract csi amplitudes and phase from raw csi *.dat
@@ -62,5 +64,5 @@ D.   explainations
 
 （4）.Psplit.m--matlab function split training data by proportion,person,scene.
 
-    use: [train_d, train_l, test_d, test_l] = eng.Psplit(train, label, scene, person, split_flag, nargout = 4) 
+    use: [train_d, train_l, test_d, test_l] = eng.Psplit(train, label, scene, person, split_flag, objflag, nargout = 4) 
 

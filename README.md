@@ -18,6 +18,8 @@ A.  Installation MATLAB Engine API for python
 B.  Datasets Downloads from https://drive.google.com/file/d/16V_NFY0YV_ouXGfO7hvZtNEG4sBl2a2D/view?usp=sharing
                  
      put it into the directory as '*/WiFi_CSI_and_Video_synchronize/examples/*'
+     
+     All method 2 in readCSI.py directly use the csi_amplitude that is in '*/examples/wifiposedata/scene1_without_occlusion/person1_female/act000001_falling_down/csi_res'
         
    
 C. (1) Demosvm.py for SVM classification.the datasets downloads from https://drive.google.com/file/d/1pME9TcA8YXjD5n4kgD3Ft9B069AfI6bm/view?usp=sharing
@@ -28,7 +30,9 @@ C. (1) Demosvm.py for SVM classification.the datasets downloads from https://dri
 
 D.   explainations
 
-(1).ReadCSI.py--python function directly processing the raw CSI *.dat into the reqiured training datasets for SVM
+(1).ReadCSI.py--python function directly processing the raw CSI *.dat into the reqiured training datasets for all algorithmn
+
+All method 2 in readCSI.py directly use the csi_amplitude that is in '*/examples/wifiposedata/scene1_without_occlusion/person1_female/act000001_falling_down/csi_res'
 
     use : [train_data,train_label,test_data,test_label] = ReadCSI.csi4svm (month,day,scene,person,action,action_seg,split_flag, objflag)
   

@@ -15,14 +15,16 @@ A.  Installation MATLAB Engine API for python
 
 
 
-B.  Datasets Downloads from https://drive.google.com/file/d/1F_Lu9Vg69z6jR7lpXmn90ticb04iT57w/view?usp=sharing
+B.  Datasets Downloads from https://drive.google.com/file/d/16V_NFY0YV_ouXGfO7hvZtNEG4sBl2a2D/view?usp=sharing
                  
      put it into the directory as '*/WiFi_CSI_and_Video_synchronize/examples/*'
         
    
-C.   Run Demosvm for SVM classification.the datasets downloads from https://drive.google.com/file/d/1pME9TcA8YXjD5n4kgD3Ft9B069AfI6bm/view?usp=sharing
+C. (1) Demosvm.py for SVM classification.the datasets downloads from https://drive.google.com/file/d/1pME9TcA8YXjD5n4kgD3Ft9B069AfI6bm/view?usp=sharing
 
-      put it into the directory as '*/WiFi_CSI_and_Video_synchronize/Result/*'
+              put it into the directory as '*/WiFi_CSI_and_Video_synchronize/Result/*'
+              
+   (2) Demoforcsinet.py for CSInet classification.
 
 D.   explainations
 
@@ -56,13 +58,9 @@ D.   explainations
   
   
 
-（3）.Pcsi4actseg.m--matlab function segment csi amplitude into action by time
- 
-     use : [train, label] = eng.Pcsi4actseg(csi_amp, scene, person, action, action_seg, nargout = 2) 
+（3）.Csi4actseg.py--function segment csi amplitude into action by time     
   
-  
+（4）.Split.py--function split training data by proportion,person,scene.
 
-（4）.Psplit.m--matlab function split training data by proportion,person,scene.
-
-    use: [train_d, train_l, test_d, test_l] = eng.Psplit(train, label, scene, person, split_flag, objflag, nargout = 4) 
+    
 

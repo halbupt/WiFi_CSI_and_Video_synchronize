@@ -1,5 +1,7 @@
 # A Wireless-Vision Dataset for Privacy Preserving Human Activity Recognition
 
+# WiFi and Video Sychronize 
+
 A.  Installation MATLAB Engine API for python
 
     ----Windows

@@ -1,5 +1,4 @@
-# Yanling
-Combined wireless signals and video for intelligent sensing
+# A Wireless-Vision Dataset for Privacy Preserving Human Activity Recognition
 
 A.  Installation MATLAB Engine API for python
 

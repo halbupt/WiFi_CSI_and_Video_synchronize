@@ -66,5 +66,9 @@ All method 2 in readCSI.py directly use the csi_amplitude that is in '*/examples
   
 （4）.Split.py--function split training data by proportion,person,scene.
 
+
+# Copyright 
+if you use this code please refer :
+Hao, Y., et al. (2020). A Wireless-Vision Dataset for Privacy Preserving Human Activity Recognition. 2020 Fourth International Conference on Multimedia Computing, Networking and Applications (MCNA).
     
 
